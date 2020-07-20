@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body class="page-body">
+  <body class="page__body">
   <header class="page-header">
      <div class="page-header-wrapper">
       <a class="page-header__logo" href="index.html">
@@ -42,7 +42,122 @@
   </header>
 
   <main class="page-main">
+    <section class="page-main__form-block">
+      <div class="page-main__title-block">
+        <h1 class="page-main__title">Подбор прогаммы</h1>
+      </div>
+      <div class="page-main__lead-block">
+       <p class="page-main__lead">
+         Заполните анкету, и мы подберем программу питания для вашего кота
+       </p>
+      </div>
+      <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__block form__block--cat">
+          <h2 class="visually-hidden">Данные кота</h2>
+          <div class="form__text-fileds">
+            <div class="form__row field-text">
+              <label class="field-text__label" for="cat-name">Имя:*</label>
+              <input class="field-text__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+            </div>
+            <div class="form__row field-text">
+              <label class="field-text__label" for="cat-weight">Вес (кг):*</label>
+              <input class="field-text__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
+            </div>
+            <div class="form__row field-text">
+              <label class="field-text__label" for="cat-age">Возраст (лет):*</label>
+              <input class="field-text__input" type="text" name="cat-age" id="cat-age" placeholder="7" required>
+            </div>
+          </div>
+        </div>
 
+         <div class="form__block form__block--program">
+           <h2 class="visually-hidden">Выбор программы</h2>
+           <div class="form__radio-fields">
+             <div class="field-radio">
+               <input class="field-radio__input" type="radio" name="slimming" id="slimming" checked>
+               <label class="field-radio__label" for="slimming">Похудение</label>
+             </div>
+             <div class="field-radio">
+               <input class="field-radio__input" type="radio" name="weight-gain" id="weight-gain">
+               <label class="field-radio__label" for="weight-gain">Набор массы</label>
+             </div>
+             <div class="field-radio">
+               <input class="field-radio__input" type="radio" name="need-advice" id="need-advice">
+               <label class="field-radio__label" for="need-advice">Не знаю (нужен ваш совет)</label>
+             </div>
+           </div>
+         </div>
+
+         <div class="form__block form__block--contacts">
+          <h2 class="form__block-subtitle subtitle">Контактные данные <span class="form__block-subtitle-comment">(владельца кота)</span></h2>
+          <div class="form__text-fields form__text-fields--contacts">
+            <div class="form__row field-text">
+              <label class="field-text__label" for="email">E-mail:*</label>
+              <input class="field-text__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+            </div>
+            <div class="form__row field-text">
+              <label class="field-text__label" for="phone">Телефон:*</label>
+              <input class="field-text__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+            </div>
+          </div>
+         </div>
+
+         <div class="form__block form__block--comment">
+           <h2 class="form__block-subtitle subtitle">Комментарий</h2>
+           <div class="form__text-fields">
+             <div class="filed-text">
+               <textarea class="field-text__input field-text__input--comment" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+             </div>
+           </div>
+         </div>
+
+         <div class="form__block form__block--additional">
+           <h2 class="form__block-subtitle subtitle">Дополнительно</h2>
+           <div class="form__checkbox-fields">
+             <div class="checkbox-field">
+               <input class="checkbox-field__input" type="checkbox" name="sugarsubstitute" id="sugarsubstitute" checked>
+               <label class="checkbox-field__label" for="sugarsubstitute">Сахарозаменитель</label>
+             </div>
+             <div class="checkbox-field">
+               <input class="checkbox-field__input" type="checkbox" name="drinkingwater" id="drinkingwater">
+               <label class="checkbox-field__label" for="drinkingwater">Питьевая вода</label>
+             </div>
+             <div class="checkbox-field">
+               <input class="checkbox-field__input" type="checkbox" name="milk" id="milk">
+               <label class="checkbox-field__label" for="milk">Молоко</label>
+             </div>
+             <div class="checkbox-field">
+               <input class="checkbox-field__input" type="checkbox" name="vitamins" id="vitamins">
+               <label class="checkbox-field__label" for="vitamins">Витамины</label>
+             </div>
+           </div>
+         </div>
+
+         <div class="form__submit">
+           <div class="form__submit-block">
+             <button class="form__submit-button button" type="submit">Отправить заявку</button>
+           </div>
+           <small class="form__submit-note">* — Обязательные поля</small>
+         </div>
+      </form>
+    </section>
+
+    <section class="contacts">
+        <div class="contacts-wrapper">
+          <div class="contacts__info-block">
+            <h2 class="contacts__info-title">Приглашаем к сотрудничеству дилеров!</h2>
+            <p class="contacts__info-address">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </p>
+          </div>
+          <div class="contacts__map">
+            <picture>
+              <!-- Блок для изоброжений -->
+              <img src="#" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            </picture>
+          </div>
+        </div>
+      </section>
   </main>
 
   <footer class="page-footer">

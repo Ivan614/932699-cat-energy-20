@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body class="page-body">
+  <body class="page__body">
   	<header class="page-header">
-  	 <div class="page-header-wrapper"> 		
+  	 <div class="page-header-wrapper">
   		<a class="page-header__logo">
   			<picture>
-  			<!-- Блок для изоброжений -->  				
+  			<!-- Блок для изоброжений -->
   			    <img src="#" width="33" height="37" alt="Логотип Кэт энерджи">
   		    </picture>
   		</a>
@@ -90,12 +90,81 @@
   				</li>
   			</ul>
   		</section>
+
+      <section class="example">
+        <div class="example-wrapper">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__descryption">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="example__statistics">
+            <div class="example__statistics-item">
+             <div class="example__statistics-value">5 кг</div>
+             <div class="example__statistics-mark">Снижение веса</div>
+            </div>
+            <div class="example__statistics-item">
+             <div class="example__statistics-value">60 дней</div>
+             <div class="example__statistics-mark">Затрачено времени</div>
+            </div>
+            <div class="example__costs-block">
+              <p class="example__cost">
+                <span class="example__cost-mark">Затраты на питание</span>
+                <span class="example__cost-value">15 000 руб.</span>
+              </p>
+            </div>
+          </div>
+            <div class="example__toggle toggle">
+              <input class="toggle__input toggle__input--before" type="radio" name="example-input" id="example-input-before">
+              <input class="toggle__input toggle__input--after" type="radio" name="example-input" id="example-input-after">
+
+            <div class="toggle__items">
+              <div class="toggle__item toggle__item--before">
+                <picture>
+                  <!-- Блок для изоброжений -->
+                  <img src="#" width="311" height="232" alt="До">
+                </picture>
+              </div>
+              <div class="toggle__item toggle__item--after">
+                <picture>
+                  <!-- Блок для изоброжений -->
+                  <img src="#" width="311" height="232" alt="После">
+                </picture>
+              </div>
+            </div>
+            <div class="toggle__control">
+              <label class="toggle__label toggle__label--before" for="example-input-before">Было</label>
+                <div class="toggle__range">
+                  <div class="toggle__scale"></div>
+                  <button class="toggle__button" type="button">До/После</button>
+                </div>
+                <label class="toggle__label toggle__label--after" for="example-input-after">Стало</label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts-wrapper">
+          <div class="contacts__info-block">
+            <h2 class="contacts__info-title">Приглашаем к сотрудничеству дилеров!</h2>
+            <p class="contacts__info-address">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </p>
+          </div>
+          <div class="contacts__map">
+            <picture>
+              <!-- Блок для изоброжений -->
+              <img src="#" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            </picture>
+          </div>
+        </div>
+      </section>
   	</main>
 
   	<footer class="page-footer">
   		<a class="page-footer__logo logo">
   			<picture>
-  			<!-- Блок для изоброжений -->  				
+  			<!-- Блок для изоброжений -->
   			    <img src="#" width="128" height="24" alt="Cat Energy">
   		    </picture>
   		</a>
@@ -118,7 +187,7 @@
   				    </a>
   				</li>
   			</ul>
-  		</div> 
+  		</div>
   		<div class="page-footer__copyright copyright">
   			<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="blank">
   				HTML Academy
