@@ -1,0 +1,22 @@
+.contacts__info-block {
+  background-color: $grey-light;
+  margin-bottom: -14px;
+  margin-top: -14px;
+}
+
+.contacts--index .contacts__info-block {
+  background-color: $white;
+}
+
+.contacts__info-title {
+  font-size: 16px;
+  font-weight: inherit;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $black2;
+  @include oswald-arial;
+}
+
+.contacts__info-address {
+  line-height: 20px;
+}

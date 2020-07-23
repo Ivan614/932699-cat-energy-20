@@ -1,0 +1,21 @@
+.intro {
+  text-align: center;
+  color: $white;
+  background-color: $green;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 110px;
+  width: 320px;
+  height: 305px;
+  @include oswald-arial;
+}
+
+.intro__title {
+  line-height: 36px;
+  font-size: 36px;
+  font-weight: inherit;
+}
+
+.intro__advice {
+  text-transform: uppercase;
+}

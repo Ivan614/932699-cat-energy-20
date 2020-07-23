@@ -1,0 +1,25 @@
+.programs__item {
+  background-color: $grey-light;
+}
+
+.programs__item-title {
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: inherit;
+  text-transform: uppercase;
+  color: $black;
+  @include oswald-arial;
+}
+
+.programs__item-descryption {
+  line-height: 18px;
+}
+
+.programs__item-link {
+  color: $black;
+  text-decoration: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  @include oswald-arial;
+}

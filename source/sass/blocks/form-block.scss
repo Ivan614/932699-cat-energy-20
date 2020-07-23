@@ -1,0 +1,44 @@
+.page-main__title {
+  font-size: 36px;
+  font-weight: inherit;
+  line-height: 36px;
+  color: $black;
+  @include oswald-arial;
+}
+
+.page-main__lead {
+  line-height: 18px;
+  color: $black;
+  text-transform: uppercase;
+  @include oswald-arial;
+}
+
+.field-text__label,
+.field-text__input {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  @include oswald-arial;
+}
+
+.field-radio__label,
+.checkbox-field__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  @include oswald-arial;
+}
+
+.form__block-subtitle{
+  font-size: 24px;
+  font-weight: inherit;
+  line-height: 26px;
+  color: $black;
+  @include oswald-arial;
+}
+
+.form__submit-note {
+  font-size: 14px;
+  line-height: 16px;
+  color: $black;
+}
