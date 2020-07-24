@@ -7,6 +7,7 @@
   line-height: 40px;
   font-weight: inherit;
   color: $black;
+
   @include oswald-arial;
 }
 
@@ -19,6 +20,7 @@
   line-height: 24px;
   color: $black;
   text-transform: uppercase;
+
   @include oswald-arial;
 }
 
@@ -31,13 +33,6 @@
   line-height: 20px;
   color: $black;
   text-transform: uppercase;
-  @include oswald-arial;
-}
 
-.toggle__label {
-  font-size: 16px;
-  line-height: 20px;
-  color: $black;
-  text-transform: uppercase;
   @include oswald-arial;
 }

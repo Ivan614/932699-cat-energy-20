@@ -3,9 +3,10 @@
   line-height: 40px;
   font-weight: inherit;
   color: $black;
+
   @include oswald-arial;
 }
 
-.features__item  {
+.features__item {
   line-height: 18px;
 }

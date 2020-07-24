@@ -9,7 +9,7 @@
   overflow: hidden;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 @mixin oswald-arial {

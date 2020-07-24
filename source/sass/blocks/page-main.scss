@@ -1,0 +1,17 @@
+// form
+.page-main__title {
+  font-size: 36px;
+  font-weight: inherit;
+  line-height: 36px;
+  color: $black;
+
+  @include oswald-arial;
+}
+
+.page-main__lead {
+  line-height: 18px;
+  color: $black;
+  text-transform: uppercase;
+
+  @include oswald-arial;
+}

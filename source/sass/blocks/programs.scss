@@ -8,6 +8,7 @@
   font-weight: inherit;
   text-transform: uppercase;
   color: $black;
+
   @include oswald-arial;
 }
 
@@ -21,5 +22,6 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
   @include oswald-arial;
 }

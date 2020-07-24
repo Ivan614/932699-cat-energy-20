@@ -48,7 +48,7 @@
   </header>
 
   <main class="page-main">
-    <section class="page-main__form-block form-block">
+    <section class="page-main__form-block">
       <div class="page-main__title-block">
         <h1 class="page-main__title">Подбор прогаммы</h1>
       </div>
@@ -61,17 +61,17 @@
         <div class="form__block form__block--cat">
           <h2 class="visually-hidden">Данные кота</h2>
           <div class="form__text-fileds">
-            <p class="form__row field-text">
-              <label class="field-text__label" for="cat-name">Имя:*</label>
-              <input class="field-text__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+            <p class="form__row">
+              <label class="form__row-label" for="cat-name">Имя:*</label>
+              <input class="form__row-input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
             </p>
-            <p class="form__row field-text">
-              <label class="field-text__label" for="cat-weight">Вес (кг):*</label>
-              <input class="field-text__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
+            <p class="form__row">
+              <label class="form__row-label" for="cat-weight">Вес (кг):*</label>
+              <input class="form__row-input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
             </p>
-            <p class="form__row field-text">
-              <label class="field-text__label" for="cat-age">Возраст (лет):*</label>
-              <input class="field-text__input" type="text" name="cat-age" id="cat-age" placeholder="7" required>
+            <p class="form__row">
+              <label class="form__row-label" for="cat-age">Возраст (лет):*</label>
+              <input class="form__row-input" type="text" name="cat-age" id="cat-age" placeholder="7" required>
             </p>
           </div>
         </div>
@@ -79,17 +79,17 @@
         <div class="form__block form__block--program">
           <h2 class="visually-hidden">Выбор программы</h2>
           <div class="form__radio-fields">
-            <p class="field-radio">
-              <input class="field-radio__input" type="radio" name="program" value="slimming" id="slimming" checked>
-              <label class="field-radio__label" for="slimming">Похудение</label>
+            <p class="form__radio">
+              <input class="form__radio-input" type="radio" name="program" value="slimming" id="slimming" checked>
+              <label class="form__radio-label" for="slimming">Похудение</label>
             </p>
-            <p class="field-radio">
-              <input class="field-radio__input" type="radio" name="program" value="weight-gain" id="weight-gain">
-              <label class="field-radio__label" for="weight-gain">Набор массы</label>
+            <p class="form__radio">
+              <input class="form__radio-input" type="radio" name="program" value="weight-gain" id="weight-gain">
+              <label class="form__radio-label" for="weight-gain">Набор массы</label>
             </p>
-            <p class="field-radio">
-              <input class="field-radio__input" type="radio" name="program" value="need-advice" id="need-advice">
-              <label class="field-radio__label" for="need-advice">Не знаю (нужен ваш совет)</label>
+            <p class="form__radio">
+              <input class="form__radio-input" type="radio" name="program" value="need-advice" id="need-advice">
+              <label class="form__radio-label" for="need-advice">Не знаю (нужен ваш совет)</label>
             </p>
           </div>
         </div>
@@ -97,13 +97,13 @@
         <div class="form__block form__block--contacts">
           <h2 class="form__block-subtitle subtitle">Контактные данные <span class="form__block-subtitle-comment">(владельца кота)</span></h2>
           <div class="form__text-fields form__text-fields--contacts">
-            <p class="form__row field-text">
-              <label class="field-text__label" for="email">E-mail:*</label>
-              <input class="field-text__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+            <p class="form__row">
+              <label class="form__row-label" for="email">E-mail:*</label>
+              <input class="form__row-input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
             </p>
-            <p class="form__row field-text">
-              <label class="field-text__label" for="phone">Телефон:*</label>
-              <input class="field-text__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+            <p class="form__row">
+              <label class="form__row-label" for="phone">Телефон:*</label>
+              <input class="form__row-input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
             </p>
           </div>
         </div>
@@ -111,8 +111,8 @@
         <div class="form__block form__block--comment">
           <h2 class="form__block-subtitle subtitle">Комментарий</h2>
           <div class="form__text-fields">
-            <div class="field-text">
-              <textarea class="field-text__input field-text__input--comment" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="form__text">
+              <textarea class="form__text-input form__text-input--comment" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </div>
         </div>
@@ -120,21 +120,21 @@
         <div class="form__block form__block--additional">
           <h2 class="form__block-subtitle subtitle">Дополнительно</h2>
           <div class="form__checkbox-fields">
-            <p class="checkbox-field">
-              <input class="checkbox-field__input" type="checkbox" name="sugarsubstitute" id="sugarsubstitute" checked>
-              <label class="checkbox-field__label" for="sugarsubstitute">Сахарозаменитель</label>
+            <p class="form__checkbox">
+              <input class="form__checkbox-input" type="checkbox" name="sugarsubstitute" id="sugarsubstitute" checked>
+              <label class="form__checkbox-label" for="sugarsubstitute">Сахарозаменитель</label>
             </p>
             <p class="checkbox-field">
-              <input class="checkbox-field__input" type="checkbox" name="drinkingwater" id="drinkingwater">
-              <label class="checkbox-field__label" for="drinkingwater">Питьевая вода</label>
+              <input class="form__checkbox-input" type="checkbox" name="drinkingwater" id="drinkingwater">
+              <label class="form__checkbox-label" for="drinkingwater">Питьевая вода</label>
             </p>
             <p class="checkbox-field">
-              <input class="checkbox-field__input" type="checkbox" name="milk" id="milk">
-              <label class="checkbox-field__label" for="milk">Молоко</label>
+              <input class="form__checkbox-input" type="checkbox" name="milk" id="milk">
+              <label class="form__checkbox-label" for="milk">Молоко</label>
             </p>
             <p class="checkbox-field">
-              <input class="checkbox-field__input" type="checkbox" name="vitamins" id="vitamins">
-              <label class="checkbox-field__label" for="vitamins">Витамины</label>
+              <input class="form__checkbox-input" type="checkbox" name="vitamins" id="vitamins">
+              <label class="form__checkbox-label" for="vitamins">Витамины</label>
             </p>
           </div>
         </div>

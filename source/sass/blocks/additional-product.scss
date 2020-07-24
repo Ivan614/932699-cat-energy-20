@@ -3,12 +3,14 @@
   font-weight: inherit;
   line-height: 24px;
   color: $black;
+
   @include oswald-arial;
 }
 
 .additional-product__title {
   line-height: 16px;
   font-weight: inherit;
+
   @include oswald-arial;
 }
 
@@ -24,14 +26,4 @@
 
 .additional-product__price {
   text-transform: uppercase;
-}
-
-.promo-block__title {
-  line-height: 20px;
-  font-weight: inherit;
-}
-
-.promo-block__link {
-  color: $black;
-  text-decoration: none;
 }
