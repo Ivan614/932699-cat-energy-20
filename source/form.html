@@ -4,12 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>Кэт энерджи: Подбор программы</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header-wrapper">
+    <div class="page-header__wrapper">
+      <div class="page-header__logo-block">
       <a class="page-header__logo" href="index.html">
         <picture>
           <!-- Блок для изоброжений -->
@@ -22,8 +24,10 @@
           <img src="img/logo-mobile-header.svg" width="101" height="18" alt="Cat Energy">
         </picture>
       </a>
+    </div>
       <nav class="main-nav">
-        <button class="main-nav-toggle" type="button">
+        <div class="main-nav__wrapper">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list list">
@@ -43,6 +47,7 @@
             </a>
           </li>
         </ul>
+      </div>
       </nav>
     </div>
   </header>

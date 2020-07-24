@@ -12,7 +12,19 @@
   @include oswald-arial;
 }
 
+.site-list {
+  padding-top: 30px;
+}
+
 .site-list__item--active {
   padding-bottom: 5px;
   border-bottom: 2px solid $green;
+}
+
+@media (min-width: $tablet) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+  }
 }
