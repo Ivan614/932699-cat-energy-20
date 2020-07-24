@@ -1,0 +1,25 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet) {
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 708px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-header__wrapper {
+    width: 1300px;
+    padding: 0 50px;
+  }
+}
+
+.page-header__logo-block {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

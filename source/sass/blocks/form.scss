@@ -1,0 +1,40 @@
+.form__row-label,
+.form__row-input {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @include oswald-arial;
+}
+
+.form__radio-label,
+.form__checkbox-label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @include oswald-arial;
+}
+
+.form__block-subtitle {
+  font-size: 24px;
+  font-weight: inherit;
+  line-height: 26px;
+  color: $black;
+
+  @include oswald-arial;
+}
+
+.form__text-input {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @include oswald-arial;
+}
+
+.form__submit-note {
+  font-size: 14px;
+  line-height: 16px;
+  color: $black;
+}

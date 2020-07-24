@@ -1,0 +1,38 @@
+.example {
+  background-color: $grey-ea;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: inherit;
+  color: $black;
+
+  @include oswald-arial;
+}
+
+.example__descryption {
+  line-height: 18px;
+}
+
+.example__statistics-value {
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+  text-transform: uppercase;
+
+  @include oswald-arial;
+}
+
+.example__statistics-mark {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__cost {
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+
+  @include oswald-arial;
+}
