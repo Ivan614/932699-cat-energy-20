@@ -2,3 +2,42 @@
   text-decoration: none;
   color: $grey-dark;
 }
+
+@media (max-width: $mobile-max) {
+  .social-list {
+    display: flex;
+    margin-left: 35px;
+  }
+
+  .social-item {
+    margin-right: 40px;
+  }
+
+  .social {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $tablet) and (max-width: $tablet-max) {
+  .social-list {
+    display: flex;
+    margin-left: 20px;
+    flex-wrap: wrap;
+  }
+
+  .social-item {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .social-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+  }
+
+  .social-item {
+    margin-right: 20px;
+  }
+}

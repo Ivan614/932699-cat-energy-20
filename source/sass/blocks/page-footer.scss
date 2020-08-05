@@ -2,3 +2,35 @@
   background-color: $grey-light;
   margin-top: -5px;
 }
+
+@media (max-width: $mobile-max) {
+  .page-footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+  }
+
+  .page-footer__logo-block {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $tablet) and (max-width: $tablet-max) {
+  .page-footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-footer__container {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
