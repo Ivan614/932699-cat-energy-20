@@ -28,16 +28,14 @@
 @media (min-width: $tablet) and (max-width: $tablet-max) {
   .toggle__item {
     position: absolute;
-    width: 690px;
-    height: 517px;
 
     &--before {
-      bottom: -150px;
+      top: 45%;
       left: 35%;
     }
 
     &--after {
-      bottom: -150px;
+      top: 45%;
       left: 40%;
     }
   }

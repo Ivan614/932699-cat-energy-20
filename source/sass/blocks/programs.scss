@@ -105,13 +105,11 @@
 @media (min-width: $desktop) {
   .programs__layout {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
   }
 
   .programs__item {
     position: relative;
-    width: 550px;
+    width: 570px;
     min-height: 374px;
     padding-top: 40px;
 
@@ -128,7 +126,7 @@
   }
 
   .programs__item--slim {
-    margin-right: 60px;
+    margin-right: auto;
   }
 
   .programs__item-title {
