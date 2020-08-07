@@ -5,6 +5,7 @@ $black2: #111111;
 $black3: #222222;
 $black4: #666666;
 $green: #68b738;
+$green-bg: #63a63a;
 $green-hover: #5eaa2f;
 $grey-dark: #444444;
 $grey-light: #f2f2f2;
@@ -14,6 +15,7 @@ $grey-66: #666666;
 $grey-d3: #d3d3d3;
 $grey-d9: #d9d9d9;
 $grey-eb: #ebebeb;
+$grey-e6: #e6e6e6;
 $grey-e7: #e7e7e7;
 $grey-ba: #bababa;
 $red-light: #ff8282;
@@ -24,3 +26,12 @@ $tablet-max: 1299px;
 $desktop: 1300px;
 $mobile: 320px;
 $mobile-max: 767px;
+
+//paddings
+$mobile-paddings: 20px;
+$tablet-paddings: 30px;
+$desktop-paddings: 40px;
+
+//lauout
+$width-for-desktop: 1330px;
+$margin: 0 auto;

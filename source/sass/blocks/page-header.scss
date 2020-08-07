@@ -3,23 +3,29 @@
   flex-direction: column;
 }
 
+.page-header__logo-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: -20px;
+}
+
+@media (max-width: $mobile-max) {
+  .page-header__logo {
+    margin-right: 50px;
+  }
+}
+
 @media (min-width: $tablet) {
-  .page-header__wrapper {
+  .page-header__container {
     display: flex;
     justify-content: space-between;
-    width: 708px;
-    margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop) {
-  .page-header__wrapper {
-    width: 1300px;
-    padding: 0 50px;
+  .page-header__container {
+    padding-top: 10px;
   }
-}
-
-.page-header__logo-block {
-  margin-top: 20px;
-  margin-bottom: 20px;
 }

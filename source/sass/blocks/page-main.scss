@@ -12,6 +12,42 @@
   line-height: 18px;
   color: $black;
   text-transform: uppercase;
+  margin-right: 20px;
 
   @include oswald-arial;
+}
+
+@media (max-width: $mobile-max) {
+  .page-main__title {
+    border-top: 1px solid $grey-e6;
+    padding: 30px 20px 30px 20px;
+    margin: 0 -20px;
+  }
+}
+
+@media (min-width: $tablet) and (max-width: $tablet-max) {
+  .page-main__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .page-main__wrapper-tablet {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-main__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .page-main__lead-block {
+    width: 350px;
+  }
+
+  .page-main__lead {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

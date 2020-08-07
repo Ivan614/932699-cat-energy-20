@@ -6,3 +6,69 @@
 
   @include oswald-arial;
 }
+
+.toggle__input {
+  display: none;
+}
+
+@media (max-width: $mobile-max) {
+  .toggle__control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .toggle__item-img {
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet) and (max-width: $tablet-max) {
+  .toggle__item {
+    position: absolute;
+
+    &--before {
+      top: 45%;
+      left: 35%;
+    }
+
+    &--after {
+      top: 45%;
+      left: 40%;
+    }
+  }
+
+  .toggle__control {
+    position: absolute;
+    bottom: 40px;
+    right: 40%;
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop) {
+  .toggle__item {
+    position: absolute;
+    width: 690px;
+    height: 517px;
+
+    &--before {
+      top: -80px;
+      left: 600px;
+    }
+
+    &--after {
+      top: -80px;
+      left: 630px;
+    }
+  }
+
+  .toggle__control {
+    position: absolute;
+    bottom: 20px;
+    left: 650px;
+    display: flex;
+  }
+}

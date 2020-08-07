@@ -15,3 +15,22 @@
 @mixin oswald-arial {
   font-family: "Oswald", "Arial", sans-serif;
 }
+
+@mixin set-paddings () {
+  padding-left: $mobile-paddings;
+  padding-right: $mobile-paddings;
+
+  @media (min-width: $tablet) and (max-width: $tablet-max) {
+    padding-left: $tablet-paddings;
+    padding-right: $tablet-paddings;
+  }
+}
+
+@mixin set-layout () {
+  @media (min-width: $desktop) {
+    width: $width-for-desktop;
+    margin: $margin;
+    padding-left: $desktop-paddings;
+    padding-right: $desktop-paddings;
+  }
+}

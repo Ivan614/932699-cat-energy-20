@@ -1,11 +1,10 @@
 .intro {
-  text-align: center;
   color: $white;
-  background-color: $green;
+  background-color: $green-bg;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  margin-bottom: 110px;
-  width: 320px;
+  background-position: center bottom, center bottom;
+  margin-bottom: 140px;
   height: 305px;
 
   @include oswald-arial;
@@ -19,4 +18,108 @@
 
 .intro__advice {
   text-transform: uppercase;
+}
+
+@media (max-width: $mobile-max) {
+  .intro__img {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .intro__text {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .intro__button-block {
+    padding: 0 20px;
+  }
+
+  .intro__button {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
+@media (min-width: $tablet) and (max-width: $tablet-max) {
+  .intro {
+    position: relative;
+    background: none;
+    color: $black;
+    margin-bottom: 450px;
+  }
+
+  .intro__text {
+    text-align: left;
+    width: 450px;
+    margin-left: 80px;
+  }
+
+  .intro__advice {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .intro__button {
+    position: absolute;
+    bottom: 20px;
+    left: 80px;
+    padding: 10px 30px;
+  }
+
+  .intro__img {
+    display: block;
+    margin-left: 170px;
+    width: 500px;
+    height: 409;
+    z-index: -1;
+  }
+}
+
+@media (min-width: $desktop) {
+  .intro {
+    position: relative;
+    background: none;
+    margin-bottom: 380px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -40%;
+      right: 0;
+      width: 50%;
+      min-height: 696px;
+      background-image: url("../img/index-background-mobile@1x.jpg");
+      background-color: $green-bg;
+      background-repeat: no-repeat;
+      background-position: 0;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+
+  .intro__text {
+    margin-left: 80px;
+    text-align: left;
+    width: 450px;
+    color: $black;
+  }
+
+  .intro__advice {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .intro__button {
+    margin-left: 80px;
+    margin-top: 20px;
+    padding: 10px 30px;
+  }
+
+  .intro__img {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+  }
 }
