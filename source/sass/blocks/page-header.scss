@@ -12,6 +12,10 @@
 }
 
 @media (max-width: $mobile-max) {
+  .page-header__logo-block {
+    margin-bottom: 10px;
+  }
+
   .page-header__logo {
     margin-right: 50px;
   }

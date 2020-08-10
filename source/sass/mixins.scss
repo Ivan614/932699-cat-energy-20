@@ -17,8 +17,10 @@
 }
 
 @mixin set-paddings () {
-  padding-left: $mobile-paddings;
-  padding-right: $mobile-paddings;
+  @media (max-width: $mobile-max) {
+    padding-left: $mobile-paddings;
+    padding-right: $mobile-paddings;
+  }
 
   @media (min-width: $tablet) and (max-width: $tablet-max) {
     padding-left: $tablet-paddings;
