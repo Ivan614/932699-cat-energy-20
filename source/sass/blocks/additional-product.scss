@@ -85,8 +85,6 @@
   .additional-product {
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
-    margin-bottom: -10px;
   }
 
   .additional-product__title {
@@ -95,7 +93,7 @@
   }
 
   .additional-product__info-wrap {
-    width: 575px;
+    width: 610px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -110,18 +108,18 @@
   }
 
   .additional-product__link-block {
-    margin-left: 20px;
+    margin-left: 40px;
     margin-top: 5px;
   }
 
   .additional-product__link-order {
-    width: 235px;
+    width: 245px;
     padding: 10px 0;
     text-align: center;
   }
 
   .additional-product__item {
-    margin-bottom: 20px;
+    padding: 6px 0;
     border-top: 1px solid $grey-cd;
   }
 }

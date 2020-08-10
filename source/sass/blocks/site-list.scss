@@ -12,10 +12,6 @@
   @include oswald-arial;
 }
 
-.site-list {
-  padding-top: 30px;
-}
-
 .site-list__item--active {
   padding-bottom: 5px;
   border-bottom: 2px solid $green;
@@ -29,8 +25,7 @@
   .site-list__item {
     border-top: 1px solid $grey-e6;
     margin: 0 -20px;
-    margin-bottom: 20px;
-    padding-top: 20px;
+    padding: 20px 0;
 
     &--active {
       border: none;
