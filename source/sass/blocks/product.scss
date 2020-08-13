@@ -90,11 +90,6 @@
     margin-left: 30px;
   }
 
-  .product__img {
-    display: block;
-    transform: scale(1.5);
-  }
-
   .product__link-block {
     margin-bottom: 30px;
   }
@@ -159,8 +154,8 @@
   .product__img-block {
     position: absolute;
     width: 170px;
-    top: -30px;
-    left: 130px;
+    top: -10%;
+    left: 25%;
   }
 
   .product__item {
@@ -258,9 +253,10 @@
 
   .product__img-block {
     position: absolute;
-    width: 170px;
-    top: -30px;
-    left: 85px;
+    width: 172px;
+    height: 196px;
+    top: -15%;
+    left: 15%;
   }
 
   .product__info-item {

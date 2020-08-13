@@ -88,7 +88,7 @@
   .example__info-block {
     background-color: $white;
     margin: 0 auto;
-    min-height: 400px;
+    min-height: 480px;
   }
 
   .example__title {
@@ -99,6 +99,20 @@
   .example__statistics {
     display: flex;
     margin-top: 40px;
+  }
+
+  .example__descryption {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .example__statistics-value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__statistics-mark {
+    margin-top: 5px;
   }
 
   .example__statistics-item {
@@ -112,17 +126,26 @@
     margin-top: -60px;
     margin-left: auto;
     text-align: right;
-    width: 155px;
+    width: 180px;
+  }
+
+  .example__cost {
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .example__toggle {
-    height: 300px;
+    min-height: 462px;
     background-color: $grey-ea;
     margin: 0 -30px;
   }
 }
 
 @media (min-width: $desktop) {
+  .example {
+    min-height: 462px;
+  }
+
   .example__container {
     padding: 40px 0;
     margin-top: 150px;
@@ -136,7 +159,7 @@
 
   .example__title-block {
     position: absolute;
-    top: -200px;
+    top: -220px;
     left: 0;
   }
 
@@ -148,15 +171,18 @@
   .example__descryption {
     width: 446px;
     padding-right: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
   }
 
   .example__statistics {
     display: flex;
-    margin-top: 40px;
+    margin-top: 100px;
   }
 
   .example__statistics-item {
-    width: 125px;
+    width: 130px;
     text-align: center;
   }
 
@@ -164,12 +190,23 @@
     margin-right: 30px;
   }
 
+  .example__statistics-value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
   .example__statistics-mark {
     margin-top: 10px;
+    font-size: 14px;
+    line-height: 14px;
   }
 
   .example__costs-block {
     margin-top: 50px;
+  }
+
+  .example__cost {
+    font-size: 20px;
   }
 
   .example__cost-value {

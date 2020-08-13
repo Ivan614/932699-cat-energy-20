@@ -26,10 +26,14 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .page-header__logo-sign {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop) {
   .page-header__container {
-    padding-top: 10px;
+    padding-top: 40px;
   }
 }

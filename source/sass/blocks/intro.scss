@@ -1,10 +1,9 @@
 .intro {
   color: $white;
   background-color: $green-bg;
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-image: linear-gradient(to top, $white 175px, transparent 175px), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom, center bottom;
-  height: 305px;
+  background-position: center bottom, center bottom 175px;
 
   @include oswald-arial;
 }
@@ -21,7 +20,10 @@
 
 @media (max-width: $mobile-max) {
   .intro {
-    margin-bottom: 160px;
+    @media (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(to top, $white 175px, transparent 175px), url("../img/index-background-mobile@2x.jpg");
+      background-size: auto, 320px auto;
+    }
   }
 
   .intro__img {
@@ -50,13 +52,13 @@
     position: relative;
     background: none;
     color: $black;
-    margin-bottom: 450px;
+    margin-bottom: 20px;
   }
 
   .intro__text {
     text-align: left;
     width: 450px;
-    margin-left: 80px;
+    margin-left: 125px;
   }
 
   .intro__advice {
@@ -66,16 +68,16 @@
 
   .intro__button {
     position: absolute;
-    bottom: 0;
-    left: 80px;
-    padding: 10px 30px;
+    top: 280px;
+    left: 125px;
+    padding: 10px 40px;
   }
 
   .intro__img {
     display: block;
-    margin-left: 170px;
-    width: 500px;
-    height: 409;
+    margin-left: 15px;
+    width: 709px;
+    height: 609px;
     z-index: -1;
   }
 }
@@ -84,7 +86,7 @@
   .intro {
     position: relative;
     background: none;
-    margin-bottom: 380px;
+    margin-bottom: 330px;
 
     &::after {
       content: "";
@@ -93,12 +95,16 @@
       right: 0;
       width: 50%;
       min-height: 696px;
-      background-image: url("../img/index-background-mobile@1x.jpg");
+      background-image: url("../img/index-background-desktop@1x.jpg");
       background-color: $green-bg;
       background-repeat: no-repeat;
-      background-position: 0;
+      background-position: center 20px;
       background-size: cover;
       z-index: -1;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 
@@ -117,12 +123,12 @@
   .intro__button {
     margin-left: 80px;
     margin-top: 20px;
-    padding: 10px 30px;
+    padding: 10px 40px;
   }
 
   .intro__img {
     position: absolute;
     top: 5%;
-    left: 50%;
+    left: 38.7%;
   }
 }
