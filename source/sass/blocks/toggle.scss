@@ -28,22 +28,24 @@
 @media (min-width: $tablet) and (max-width: $tablet-max) {
   .toggle__item {
     position: absolute;
+    width: 690px;
+    height: 517px;
 
     &--before {
-      top: 45%;
-      left: 35%;
+      top: 35%;
+      left: 5%;
     }
 
     &--after {
-      top: 45%;
-      left: 40%;
+      top: 35%;
+      left: 15%;
     }
   }
 
   .toggle__control {
     position: absolute;
-    bottom: 40px;
-    right: 40%;
+    bottom: 5%;
+    left: 30%;
     display: flex;
   }
 }
@@ -55,20 +57,20 @@
     height: 517px;
 
     &--before {
-      top: -80px;
-      left: 600px;
+      top: -40%;
+      left: 45%;
     }
 
     &--after {
-      top: -80px;
-      left: 630px;
+      top: -40%;
+      left: 50%;
     }
   }
 
   .toggle__control {
     position: absolute;
-    bottom: 20px;
-    left: 650px;
+    bottom: 15%;
+    left: 60%;
     display: flex;
   }
 }

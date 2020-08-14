@@ -15,14 +15,14 @@
         <div class="page-header__logo-block">
           <a class="page-header__logo" href="index.html">
             <picture>
-              <!-- Блок для изоброжений -->
-              <img src="img/logo-mobile.svg" width="33" height="37" alt="Логотип Кэт энерджи">
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Логотип Кэт энерджи">
             </picture>
           </a>
           <a class="page-header__logo-sign" href="index.html">
             <picture>
-              <!-- Блок для изоброжений -->
-              <img src="img/logo-mobile-header.svg" width="101" height="18" alt="Cat Energy">
+              <img class="page-header__logo-sign-img" src="img/logo-mobile-header.svg" width="101" height="18" alt="Cat Energy">
             </picture>
           </a>
         </div>
@@ -167,17 +167,20 @@
       </div>
     </section>
 
-    <section class="contacts contacts--index">
+    <section class="contacts contacts--index contacts--background">
       <div class="contacts__info-block">
-        <h2 class="contacts__info-title">Приглашаем к сотрудничеству дилеров!</h2>
+        <h2 class="contacts__info-title">
+          Приглашаем к сотрудничеству дилеров!
+        </h2>
         <p class="contacts__info-address">
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </p>
       </div>
       <div class="contacts__map">
         <picture>
-          <!-- Блок для изоброжений -->
-          <img src="img/bg-map-mobile@1x.png" width="320" height="400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </picture>
       </div>
     </section>

@@ -4,44 +4,75 @@
 }
 
 .promo-block__link {
-  color: $black;
+  color: $white;
   text-decoration: none;
 }
 
 @media (max-width: $mobile-max) {
   .promo-block {
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 40px;
     border-top: 1px solid $grey-cd;
-    padding-top: 60px;
+    padding-top: 50px;
+    position: relative;
   }
 
   .promo-block__img-block {
     width: 280px;
+    height: 289px;
+    background-color: $green;
     margin: 0 auto;
+  }
+
+  .promo-block__title {
+    position: absolute;
+    bottom: 8%;
+    right: 19%;
+    width: 175px;
+    text-align: center;
   }
 }
 
 @media (min-width: $tablet) and (max-width: $tablet-max) {
   .promo-block {
+    width: 706px;
+    margin: 0 auto;
+    position: relative;
     margin-top: 50px;
   }
 
   .promo-block__img-block {
-    width: 280px;
+    width: 706px;
+    height: 200px;
+    background-color: $green;
     margin: 0 auto;
+  }
+
+  .promo-block__title {
+    position: absolute;
+    bottom: 20%;
+    right: 18%;
+    width: 175px;
+    text-align: left;
+  }
+
+  .promo-block__link {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: $desktop) {
   .promo-block {
-    width: 245px;
-    height: 289px;
-    background-color: $green;
     position: relative;
     margin-left: 80px;
   }
 
   .promo-block__img-block {
-    width: 235px;
+    width: 245px;
+    height: 289px;
+    background-color: $green;
     margin: 0;
     padding: 0;
   }
@@ -57,6 +88,5 @@
   .promo-block__link {
     font-size: 16px;
     line-height: 20px;
-    color: $white;
   }
 }
