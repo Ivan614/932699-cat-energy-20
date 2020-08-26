@@ -13,10 +13,12 @@
 }
 
 .programs__item-descryption {
+  font-size: 14px;
   line-height: 18px;
 }
 
 .programs__item-link {
+  position: relative;
   color: $black;
   text-decoration: inherit;
   font-size: 16px;
@@ -24,6 +26,44 @@
   text-transform: uppercase;
 
   @include oswald-arial;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: -50px;
+    width: 32px;
+    height: 10px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.programs__item::after {
+  content: "";
+  position: absolute;
+  top: auto;
+  right: auto;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.programs__item--slim::after {
+  position: absolute;
+  background-image: url("../img/icon-cat-slim.svg");
+}
+
+.programs__item--pro::after {
+  position: absolute;
+  background-image: url("../img/icon-cat-pro.svg");
 }
 
 @media (max-width: $mobile-max) {
@@ -33,6 +73,8 @@
     padding-top: 5px;
     margin-top: 30px;
     margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     &::before {
       content: "";
@@ -46,18 +88,28 @@
     }
   }
 
-  .programs__item-title {
-    padding-left: 90px;
+  .programs__item--slim::after {
+    top: 20px;
+    left: 30px;
+    width: 36.02px;
+    height: 50px;
   }
 
-  .programs__item-descryption {
-    padding-left: 20px;
-    padding-right: 20px;
+  .programs__item--pro::after {
+    top: 35px;
+    left: 10px;
+    width: 67.03px;
+    height: 28.08px;
+  }
+
+  .programs__item-title {
+    padding-left: 70px;
   }
 
   .programs__item-wrap {
-    margin-top: 40px;
-    margin-left: 20px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid $grey-d9;
   }
 }
 
@@ -81,6 +133,20 @@
     }
   }
 
+  .programs__item--slim::after {
+    top: 90px;
+    right: 90px;
+    width: 140px;
+    height: 192px;
+  }
+
+  .programs__item--pro::after {
+    top: 140px;
+    right: 30px;
+    width: 268px;
+    height: 112px;
+  }
+
   .programs__item-title {
     font-size: 36px;
     line-height: 36px;
@@ -89,14 +155,22 @@
   .programs__item-descryption {
     margin-right: 280px;
     color: $black;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .programs__item-link {
     font-size: 20px;
     line-height: 30px;
+
+    &::after {
+      top: 10px;
+      right: -50px;
+    }
   }
 
   .programs__item-wrap {
+    position: relative;
     margin-top: 60px;
     margin-left: 0;
   }
@@ -119,10 +193,24 @@
       top: 40px;
       left: 50px;
       width: 100px;
-      height: 100px;
+      height: 106px;
       border-radius: 50%;
       background-color: $green;
     }
+  }
+
+  .programs__item--slim::after {
+    top: 30px;
+    left: 60px;
+    width: 100px;
+    height: 106px;
+  }
+
+  .programs__item--pro::after {
+    top: 65px;
+    left: 30px;
+    width: 134px;
+    height: 56px;
   }
 
   .programs__item--slim {
@@ -147,6 +235,11 @@
   .programs__item-link {
     font-size: 20px;
     line-height: 30px;
+
+    &::after {
+      top: 10px;
+      right: -55px;
+    }
   }
 
   .programs__item-wrap {

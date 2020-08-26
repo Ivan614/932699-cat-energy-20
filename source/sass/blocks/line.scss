@@ -1,0 +1,27 @@
+@media (max-width: $mobile-max) {
+  .line {
+    background-image: linear-gradient(to bottom, transparent 10px, $green 5px, $green 15px, transparent 20px);
+    height: 12px;
+    display: flex;
+    align-items: center;
+    margin-right: -20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .line {
+    background-image: linear-gradient(to bottom, transparent 10px, $green 5px, $green 15px, transparent 20px);
+    height: 12px;
+    display: flex;
+    align-items: center;
+    margin: -10px -70px 80px -70px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .line {
+    margin: -10px -110px 80px -110px;
+  }
+}

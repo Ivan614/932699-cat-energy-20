@@ -1,12 +1,4 @@
-@media (min-width: $tablet) and (max-width: $tablet-max) {
-  .subtitle {
-    font-size: 30px;
-    line-height: 30px;
-  }
-}
-
-
-@media (min-width: $desktop) {
+@media (min-width: $tablet) {
   .subtitle {
     font-size: 36px;
     line-height: 36px;

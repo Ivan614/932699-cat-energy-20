@@ -5,9 +5,25 @@
   line-height: 18px;
 }
 
+.copyright__link-logo {
+  fill: $grey-66;
+}
+
+.copyright:hover .copyright__link-logo,
+.copyright:focus .copyright__link-logo {
+  fill: $green;
+}
+
+.copyright:active .copyright__link-logo,
+.copyright__link:active {
+  opacity: 0.3;
+}
+
 @media (max-width: $mobile-max) {
   .copyright {
     width: 280px;
+    margin-top: 35px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
   }

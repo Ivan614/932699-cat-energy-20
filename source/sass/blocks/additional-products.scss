@@ -13,7 +13,9 @@
   }
 
   .additional-products__title {
-    margin-bottom: 40px;
+    background-color: $white;
+    padding-right: 25px;
+    margin: 0;
   }
 }
 
@@ -25,7 +27,9 @@
   .additional-products__title {
     font-size: 36px;
     line-height: 36px;
-    padding-bottom: 50px;
+    background-color: $white;
+    padding: 0 35px;
+    margin-left: 35px;
   }
 }
 
@@ -42,7 +46,9 @@
   .additional-products__title {
     font-size: 36px;
     line-height: 36px;
-    padding-bottom: 50px;
+    background-color: $white;
+    padding: 0 35px;
+    margin-left: 73px;
   }
 
   .additional-products__list {

@@ -8,6 +8,20 @@
   text-decoration: none;
 }
 
+.promo-block__img-block {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 55.5px;
+    height: 60px;
+    top: 60px;
+    left: 110px;
+    background: url("../img/icon-gift.svg");
+  }
+}
+
 @media (max-width: $mobile-max) {
   .promo-block {
     width: 280px;
@@ -47,6 +61,11 @@
     height: 200px;
     background-color: $green;
     margin: 0 auto;
+
+    &::before {
+      top: 70px;
+      left: 90px;
+    }
   }
 
   .promo-block__title {
@@ -75,6 +94,11 @@
     background-color: $green;
     margin: 0;
     padding: 0;
+
+    &::before {
+      top: 65px;
+      left: 100px;
+    }
   }
 
   .promo-block__title {

@@ -17,6 +17,14 @@
   border-bottom: 2px solid $green;
 }
 
+.site-list__item:hover a[href] {
+  opacity: 0.6;
+}
+
+.site-list__item:active a[href] {
+  opacity: 0.3;
+}
+
 @media (max-width: $mobile-max) {
   .site-list__item-link {
     font-weight: 700;
