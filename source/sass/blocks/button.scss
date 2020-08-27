@@ -10,9 +10,25 @@
   border: 0;
 
   @include oswald-arial;
+
+  &:hover {
+    background-color: $green-hover;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
 }
 
 .button--show {
   background-color: $grey-light;
   color: $grey-dark;
+
+  &:hover {
+    background-color: $grey-eb;
+  }
+
+  &:active {
+    color: rgba($grey-dark, 0.3);
+  }
 }

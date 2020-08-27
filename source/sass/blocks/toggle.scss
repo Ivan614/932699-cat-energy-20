@@ -16,6 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 25px;
   }
 
   .toggle__item-img {
@@ -23,54 +24,259 @@
     width: 320px;
     margin: 0 auto;
   }
+
+  .toggle__item--after {
+    display: none;
+  }
+
+  .toggle__range {
+    position: relative;
+    display: block;
+    width: 84px;
+    margin: 3px 18px;
+  }
+
+  .toggle__scale {
+    display: block;
+    height: 14px;
+    background-color: $white;
+    border: 1px solid $grey-cd;
+    border-radius: 6px;
+  }
+
+  .toggle__button {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 5px;
+    width: 35px;
+    height: 6px;
+    margin-top: -3px;
+    padding: 0;
+    background-color: $green;
+    border: 0;
+    border-radius: 3px;
+    text-indent: -1000px;
+    overflow: hidden;
+  }
 }
 
 @media (min-width: $tablet) and (max-width: $tablet-max) {
-  .toggle__item {
-    position: absolute;
+  .toggle__item-img {
     width: 690px;
-    height: 517px;
+    max-width: 690px;
+  }
 
-    &--before {
-      top: 35%;
-      left: 5%;
+  .toggle__items {
+    width: 690px;
+    position: relative;
+  }
+
+  .toggle__item {
+    width: 338px;
+    height: 517px;
+    overflow: hidden;
+  }
+
+  .toggle__item--before {
+    position: absolute;
+    top: -170px;
+    left: 80px;
+  }
+
+  .toggle__item--after {
+    position: absolute;
+    width: 350px;
+    top: -170px;
+    left: 418px;
+  }
+
+  .toggle__item--after .toggle__item-img {
+    position: absolute;
+    right: 0;
+  }
+
+  .toggle__label {
+    border-bottom: 1px dotted rgba($black, 0.4);
+    padding-bottom: 3px;
+
+    &:hover {
+      border-bottom: 1px solid rgba($black, 0.4);
     }
 
-    &--after {
-      top: 35%;
-      left: 15%;
+    &:active {
+      border: none;
     }
   }
 
   .toggle__control {
     position: absolute;
-    bottom: 5%;
-    left: 30%;
+    bottom: 7%;
+    left: 10%;
     display: flex;
+  }
+
+  .toggle__range {
+    position: relative;
+    display: block;
+    width: 438px;
+    margin: 0 21px 0 23px;
+  }
+
+  .toggle__scale {
+    display: block;
+    height: 6px;
+    background-color: $grey-dc;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+
+  .toggle__button {
+    display: block;
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 50%;
+    left: 50%;
+    margin-top: -16px;
+    margin-left: -17px;
+    background-color: $white;
+    border: 1px solid $grey-cd;
+    border-radius: 50%;
+    text-indent: -1000px;
+    box-shadow: 0 1px 3px 0 rgba($black, 0.16);
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: $green;
+      border-radius: 50%;
+    }
+
+    &:hover {
+      box-shadow: 0 2px 4px 0 rgba($black, 0.19);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba($black, 0.2);
+      border: 1px solid $green;
+    }
   }
 }
 
 @media (min-width: $desktop) {
-  .toggle__item {
-    position: absolute;
+  .toggle__item-img {
     width: 690px;
-    height: 517px;
+    max-width: 690px;
+  }
 
-    &--before {
-      top: -40%;
-      left: 45%;
+  .toggle__items {
+    width: 690px;
+    position: relative;
+  }
+
+  .toggle__item {
+    width: 365px;
+    height: 517px;
+    overflow: hidden;
+  }
+
+  .toggle__item--before {
+    position: absolute;
+    top: -620px;
+    left: 550px;
+  }
+
+  .toggle__item--after {
+    position: absolute;
+    width: 325px;
+    top: -620px;
+    left: 914px;
+  }
+
+  .toggle__item--after .toggle__item-img {
+    position: absolute;
+    right: 0;
+  }
+
+  .toggle__label {
+    border-bottom: 1px dotted rgba($black, 0.4);
+    padding-bottom: 3px;
+
+    &:hover {
+      border-bottom: 1px solid rgba($black, 0.4);
     }
 
-    &--after {
-      top: -40%;
-      left: 50%;
+    &:active {
+      border: none;
     }
   }
 
   .toggle__control {
     position: absolute;
     bottom: 15%;
-    left: 60%;
+    left: 50%;
     display: flex;
+  }
+
+  .toggle__range {
+    position: relative;
+    display: block;
+    width: 428px;
+    margin: 0 21px 0 55px;
+  }
+
+  .toggle__scale {
+    display: block;
+    height: 6px;
+    background-color: $grey-dc;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+
+  .toggle__button {
+    display: block;
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 50%;
+    left: 50%;
+    margin-top: -16px;
+    margin-left: -17px;
+    background-color: $white;
+    border: 1px solid $grey-cd;
+    border-radius: 50%;
+    text-indent: -10000px;
+    box-shadow: 0 1px 3px 0 rgba($black, 0.16);
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: $green;
+      border-radius: 50%;
+    }
+
+    &:hover {
+      box-shadow: 0 2px 4px 0 rgba($black, 0.19);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba($black, 0.2);
+      border: 1px solid $green;
+    }
   }
 }

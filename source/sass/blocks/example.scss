@@ -28,6 +28,7 @@
 .example__statistics-mark {
   font-size: 12px;
   line-height: 12px;
+  text-transform: lowercase;
 }
 
 .example__cost {
@@ -53,24 +54,32 @@
   .example__statistics {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .example__statistics-item {
+    width: 124px;
     text-align: center;
   }
 
-  .example__statistics-weightloss {
-    width: 70px;
-  }
-
-  .example__statistics-timespent {
-    width: 90px;
+  .example__statistics-value {
+    border: 1px solid $grey-cd;
+    border-radius: 3px;
+    padding: 15px 0;
   }
 
   .example__statistics-mark {
-    margin-top: 5px;
+    width: 90px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -8px;
+    padding: 0 0;
+    background-color: $grey-ea;
+  }
+
+  .example__statistics-weightloss .example__statistics-mark {
+    padding: 0 10px;
   }
 
   .example__costs-block {
@@ -88,7 +97,7 @@
   .example__info-block {
     background-color: $white;
     margin: 0 auto;
-    min-height: 480px;
+    min-height: 550px;
   }
 
   .example__title {
@@ -107,23 +116,39 @@
   }
 
   .example__statistics-value {
+    border: 1px solid $grey-cd;
+    border-radius: 3px;
+    padding: 20px 0;
     font-size: 30px;
     line-height: 37px;
   }
 
+  .example__statistics-weightloss {
+    margin-right: 40px;
+  }
+
   .example__statistics-mark {
-    margin-top: 5px;
+    width: 142px;
+    margin: 0 auto;
+    margin-top: -8px;
+    background-color: $white;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__statistics-weightloss .example__statistics-mark {
+    width: 112px;
   }
 
   .example__statistics-item {
-    width: 125px;
+    width: 162px;
     text-align: center;
   }
 
   .example__costs-block {
     display: flex;
     justify-content: flex-end;
-    margin-top: -60px;
+    margin-top: -90px;
     margin-left: auto;
     text-align: right;
     width: 180px;
@@ -144,6 +169,7 @@
 @media (min-width: $desktop) {
   .example {
     min-height: 462px;
+    background-color: $grey-light;
   }
 
   .example__container {
@@ -159,7 +185,7 @@
 
   .example__title-block {
     position: absolute;
-    top: -220px;
+    top: -240px;
     left: 0;
   }
 
@@ -182,23 +208,33 @@
   }
 
   .example__statistics-item {
-    width: 130px;
+    width: 162px;
     text-align: center;
   }
 
-  .example__statistics-weightloss {
-    margin-right: 30px;
-  }
-
   .example__statistics-value {
+    border: 1px solid $grey-cd;
+    border-radius: 3px;
+    padding: 20px 0;
     font-size: 30px;
     line-height: 37px;
   }
 
+  .example__statistics-weightloss {
+    margin-right: 40px;
+  }
+
   .example__statistics-mark {
-    margin-top: 10px;
+    width: 142px;
+    margin: 0 auto;
+    margin-top: -8px;
+    background-color: $grey-ea;
     font-size: 14px;
     line-height: 14px;
+  }
+
+  .example__statistics-weightloss .example__statistics-mark {
+    width: 112px;
   }
 
   .example__costs-block {

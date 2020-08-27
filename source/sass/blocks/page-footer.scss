@@ -3,6 +3,15 @@
   margin-top: -5px;
 }
 
+.page-footer__logo-block:hover a[href] {
+  opacity: 0.8;
+}
+
+.page-footer__logo-block:active a[href],
+.page-footer__logo-block:focus a[href] {
+  opacity: 0.6;
+}
+
 @media (max-width: $mobile-max) {
   .page-footer__container {
     display: flex;
