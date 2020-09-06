@@ -3,6 +3,7 @@
   line-height: 20px;
   color: $black;
   text-transform: uppercase;
+  display: inline-block;
 
   @include oswald-arial;
 }
@@ -172,6 +173,10 @@
 }
 
 @media (min-width: $desktop) {
+  .toggle {
+    position: relative;
+  }
+
   .toggle__item-img {
     width: 690px;
     max-width: 690px;
@@ -190,15 +195,15 @@
 
   .toggle__item--before {
     position: absolute;
-    top: -620px;
-    left: 550px;
+    top: -590px;
+    left: 565px;
   }
 
   .toggle__item--after {
     position: absolute;
     width: 325px;
-    top: -620px;
-    left: 914px;
+    top: -590px;
+    left: 930px;
   }
 
   .toggle__item--after .toggle__item-img {
@@ -222,7 +227,7 @@
   .toggle__control {
     position: absolute;
     bottom: 15%;
-    left: 50%;
+    left: 53.8%;
     display: flex;
   }
 
@@ -230,7 +235,7 @@
     position: relative;
     display: block;
     width: 428px;
-    margin: 0 21px 0 55px;
+    margin: 0 19.5px 0 24px;
   }
 
   .toggle__scale {
