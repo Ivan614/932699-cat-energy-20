@@ -108,6 +108,19 @@ const webpFormat = () => {
 
 exports.webpFormat = webpFormat;
 
+// build
+
+const build = gulp.series(
+  clean,
+  copy,
+  styles,
+  sprite,
+  js,
+  html
+);
+
+exports.build = build;
+
 // Server
 
 const server = (done) => {
@@ -131,19 +144,6 @@ const watcher = () => {
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
-exports.default = gulp.series(
-  styles, server, watcher
+exports.start = gulp.series(
+  build, server, watcher
 );
-
-// build
-
-const build = gulp.series(
-  clean,
-  copy,
-  styles,
-  sprite,
-  js,
-  html
-);
-
-exports.build = build;
