@@ -16,8 +16,8 @@
     position: absolute;
     width: 55.5px;
     height: 60px;
-    top: 60px;
-    left: 110px;
+    top: 63px;
+    left: 113px;
     background: url("../img/icon-gift.svg");
   }
 }
@@ -26,9 +26,9 @@
   .promo-block {
     width: 280px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     border-top: 1px solid $grey-cd;
-    padding-top: 50px;
+    padding-top: 40px;
     position: relative;
   }
 
@@ -53,7 +53,8 @@
     width: 706px;
     margin: 0 auto;
     position: relative;
-    margin-top: 50px;
+    margin-top: 65px;
+    margin-bottom: 80px;
   }
 
   .promo-block__img-block {
@@ -71,7 +72,7 @@
   .promo-block__title {
     position: absolute;
     bottom: 20%;
-    right: 18%;
+    right: 15%;
     width: 175px;
     text-align: left;
   }
@@ -86,6 +87,7 @@
   .promo-block {
     position: relative;
     margin-left: 80px;
+    margin-top: 10px;
   }
 
   .promo-block__img-block {
@@ -97,14 +99,14 @@
 
     &::before {
       top: 65px;
-      left: 100px;
+      left: 95px;
     }
   }
 
   .promo-block__title {
     position: absolute;
-    bottom: 20px;
-    right: 40px;
+    bottom: 25px;
+    right: 45px;
     width: 150px;
     text-align: center;
   }

@@ -12,7 +12,7 @@
   @include oswald-arial;
 }
 
-.programs__item-descryption {
+.programs__item-description {
   font-size: 14px;
   line-height: 18px;
 }
@@ -31,7 +31,7 @@
     content: "";
     position: absolute;
     top: 7px;
-    right: -50px;
+    right: -47px;
     width: 32px;
     height: 10px;
     background-image: url("../img/icon-right-arrow-long.svg");
@@ -71,8 +71,7 @@
     position: relative;
     min-height: 266px;
     padding-top: 5px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -80,24 +79,24 @@
       content: "";
       position: absolute;
       top: 20px;
-      left: 20px;
+      left: 22px;
       width: 50px;
-      height: 53px;
+      height: 50px;
       border-radius: 50%;
       background-color: $green;
     }
   }
 
   .programs__item--slim::after {
-    top: 20px;
+    top: 17px;
     left: 30px;
     width: 36.02px;
     height: 50px;
   }
 
   .programs__item--pro::after {
-    top: 35px;
-    left: 10px;
+    top: 32px;
+    left: 13px;
     width: 67.03px;
     height: 28.08px;
   }
@@ -107,7 +106,7 @@
   }
 
   .programs__item-wrap {
-    margin-top: 20px;
+    margin-top: 23px;
     padding-top: 20px;
     border-top: 1px solid $grey-d9;
   }
@@ -117,15 +116,15 @@
   .programs__item {
     position: relative;
     min-height: 372px;
-    padding-left: 50px;
-    padding-top: 50px;
+    padding-left: 52px;
+    padding-top: 40px;
     margin-bottom: 30px;
 
     &::before {
       content: "";
       position: absolute;
-      top: 100px;
-      right: 60px;
+      top: 93px;
+      right: 61px;
       width: 200px;
       height: 200px;
       border-radius: 50%;
@@ -133,16 +132,20 @@
     }
   }
 
+  .programs {
+    margin-bottom: -5px;
+  }
+
   .programs__item--slim::after {
-    top: 90px;
-    right: 90px;
+    top: 81px;
+    right: 92px;
     width: 140px;
     height: 192px;
   }
 
   .programs__item--pro::after {
-    top: 140px;
-    right: 30px;
+    top: 136px;
+    right: 28px;
     width: 268px;
     height: 112px;
   }
@@ -152,11 +155,16 @@
     line-height: 36px;
   }
 
-  .programs__item-descryption {
+  .programs__item-description {
     margin-right: 280px;
+    margin-top: -10px;
     color: $black;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .programs__item--pro .programs__item-description {
+    margin-right: 312px;
   }
 
   .programs__item-link {
@@ -165,13 +173,13 @@
 
     &::after {
       top: 10px;
-      right: -50px;
+      right: -58px;
     }
   }
 
   .programs__item-wrap {
     position: relative;
-    margin-top: 60px;
+    margin-top: 50px;
     margin-left: 0;
   }
 }
@@ -179,6 +187,7 @@
 @media (min-width: $desktop) {
   .programs__layout {
     display: flex;
+    padding-bottom: 20px;
   }
 
   .programs__item {
@@ -190,25 +199,25 @@
     &::before {
       content: "";
       position: absolute;
-      top: 40px;
-      left: 50px;
+      top: 45px;
+      left: 52px;
       width: 100px;
-      height: 106px;
+      height: 100px;
       border-radius: 50%;
       background-color: $green;
     }
   }
 
   .programs__item--slim::after {
-    top: 30px;
-    left: 60px;
-    width: 100px;
-    height: 106px;
+    top: 38px;
+    left: 65px;
+    width: 70px;
+    height: 97px;
   }
 
   .programs__item--pro::after {
-    top: 65px;
-    left: 30px;
+    top: 68px;
+    left: 34px;
     width: 134px;
     height: 56px;
   }
@@ -218,17 +227,17 @@
   }
 
   .programs__item-title {
-    padding-left: 200px;
+    padding-left: 213px;
     font-size: 36px;
     line-height: 36px;
   }
 
-  .programs__item-descryption {
+  .programs__item-description {
     font-size: inherit;
     line-height: inherit;
-    margin-left: 40px;
+    margin-left: 52px;
     margin-right: 50px;
-    margin-top: 70px;
+    margin-top: 73px;
     color: $black;
   }
 
@@ -243,7 +252,7 @@
   }
 
   .programs__item-wrap {
-    margin-top: 40px;
-    margin-left: 40px;
+    margin-top: 25px;
+    margin-left: 52px;
   }
 }

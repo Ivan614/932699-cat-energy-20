@@ -1,6 +1,7 @@
 .intro {
   color: $white;
   background-color: $green-bg;
+  min-height: 305px;
   background-image: linear-gradient(to top, $white 175px, transparent 175px), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center bottom, center bottom 175px;
@@ -20,8 +21,11 @@
 
 @media (max-width: $mobile-max) {
   .intro {
+    margin-top: 5px;
+    margin-bottom: 5px;
+
     @media (min-resolution: $retina-dppx) {
-      background-image: linear-gradient(to top, $white 175px, transparent 175px), url("../img/index-background-mobile@2x.jpg");
+      background-image: linear-gradient(to top, $white 170px, transparent 170px), url("../img/index-background-mobile@2x.jpg");
       background-size: auto, 320px auto;
     }
   }
@@ -30,20 +34,28 @@
     display: block;
     width: 280px;
     margin: 0 auto;
+    padding-top: 10px;
   }
 
   .intro__text {
     text-align: center;
     padding: 0 20px;
+    margin-top: -5px;
+  }
+
+  .intro__advice {
+    margin-top: -5px;
+    font-weight: inherit;
   }
 
   .intro__button-block {
     padding: 0 20px;
+    margin-top: 5px;
   }
 
   .intro__button {
     width: 100%;
-    padding: 10px 0;
+    padding: 11px 0;
   }
 }
 
@@ -52,30 +64,33 @@
     position: relative;
     background: none;
     color: $black;
-    margin-bottom: 20px;
   }
 
   .intro__text {
     text-align: left;
     width: 450px;
-    margin-left: 125px;
+    margin-left: 118px;
+    margin-top: 65px;
   }
 
   .intro__advice {
     font-size: 20px;
     line-height: 20px;
+    margin-top: -10px;
   }
 
   .intro__button {
     position: absolute;
-    top: 280px;
-    left: 125px;
-    padding: 10px 40px;
+    width: 244px;
+    top: 290px;
+    left: 118px;
+    padding: 14px 0;
+    font-size: 20px;
   }
 
   .intro__img {
     display: block;
-    margin-left: 15px;
+    margin-left: 30px;
     width: 709px;
     height: 609px;
     z-index: -1;
@@ -86,7 +101,7 @@
   .intro {
     position: relative;
     background: none;
-    margin-bottom: 330px;
+    margin-bottom: 270px;
 
     &::after {
       content: "";
@@ -94,11 +109,11 @@
       top: -40%;
       right: 0;
       width: 50%;
-      min-height: 696px;
+      min-height: 745px;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-color: $green-bg;
       background-repeat: no-repeat;
-      background-position: center 20px;
+      background-position: center 40px;
       background-size: cover;
       z-index: -1;
 
@@ -110,6 +125,7 @@
 
   .intro__text {
     margin-left: 80px;
+    margin-top: 110px;
     text-align: left;
     width: 450px;
     color: $black;
@@ -118,17 +134,20 @@
   .intro__advice {
     font-size: 20px;
     line-height: 20px;
+    margin-top: -10px;
   }
 
   .intro__button {
     margin-left: 80px;
-    margin-top: 20px;
-    padding: 10px 40px;
+    margin-top: 35px;
+    font-size: 20px;
+    padding: 14px 0;
+    width: 245px;
   }
 
   .intro__img {
     position: absolute;
-    top: 5%;
-    left: 38.7%;
+    top: 7%;
+    left: 39%;
   }
 }

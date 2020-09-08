@@ -14,14 +14,19 @@
 
   .additional-products__title {
     background-color: $white;
-    padding-right: 25px;
+    padding-right: 23px;
     margin: 0;
+  }
+
+  .additional-products__title-line {
+    margin-top: 15px;
   }
 }
 
 @media (min-width: $tablet) and (max-width: $tablet-max) {
   .additional-products__list-block {
     border: 1px solid $grey-cd;
+    margin-top: 95px;
   }
 
   .additional-products__title {
@@ -29,13 +34,13 @@
     line-height: 36px;
     background-color: $white;
     padding: 0 35px;
-    margin-left: 35px;
+    margin-left: 73px;
   }
 }
 
 @media (min-width: $desktop) {
   .additional-products {
-    margin-bottom: 60px;
+    margin-bottom: 85px;
   }
 
   .additional-products__wrap-desktop {
@@ -53,5 +58,6 @@
 
   .additional-products__list {
     border-bottom: 1px solid $grey-cd;
+    margin-top: 10px;
   }
 }

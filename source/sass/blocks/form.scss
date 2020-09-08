@@ -146,7 +146,7 @@
   content: "";
   position: absolute;
   top: 17px;
-  right: 10px;
+  right: 15px;
 }
 
 .form__row-icon-phone {
@@ -197,21 +197,36 @@
   .form__row {
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+  }
+
+  .form__checkbox-fields {
+    margin-top: 45px;
+    margin-bottom: 40px;
   }
 
   .form__checkbox {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
   .form__row-label {
     white-space: nowrap;
-    margin-right: 20px;
+    margin-right: 15px;
     margin-top: 15px;
   }
 
   .form__text-fields--contacts {
-    padding-top: 20px;
+    padding-top: 10px;
+    margin-bottom: 35px;
+  }
+
+  .form__text-fields--contacts .form__row-label {
+    margin-right: 10px;
+  }
+
+  .form__row-icon-phone {
+    top: 12px;
+    right: 13px;
   }
 
   .form__row-input {
@@ -231,11 +246,11 @@
   }
 
   .form__radio-label {
-    margin-left: 40px;
+    margin-left: 30px;
   }
 
   .form__checkbox-label {
-    margin-left: 40px;
+    margin-left: 28px;
   }
 
   .form__radio-input,
@@ -246,8 +261,8 @@
   .form__block--program {
     border-top: 1px solid $grey-d9;
     border-bottom: 1px solid $grey-d9;
-    padding: 10px 20px;
-    margin: 0 -20px 40px -20px;
+    padding: 20px 20px 0 20px;
+    margin: 0 -20px 30px -20px;
   }
 
   .form__text-input--comment {
@@ -256,7 +271,11 @@
     resize: none;
     border: 1px solid $grey-e7;
     padding-top: 15px;
-    padding-left: 20px;
+    padding-left: 15px;
+  }
+
+  .form__block--comment {
+    margin-bottom: 30px;
   }
 
   .form__submit-block {
@@ -266,7 +285,8 @@
   .form__submit-button {
     width: 100%;
     text-align: center;
-    padding: 10px 0;
+    padding: 8px 0;
+    font-size: 16px;
   }
 
   .form__submit-note {
@@ -277,7 +297,7 @@
 
 @media (min-width: $tablet) and (max-width: $tablet-max) {
   .form {
-    margin-bottom: 60px;
+    margin-bottom: 75px;
   }
 
   .form__block--cat {
@@ -285,7 +305,7 @@
   }
 
   .form__block-subtitle {
-    padding: 0 35px;
+    padding: 0 40px;
     margin-left: 30px;
   }
 
@@ -297,11 +317,15 @@
   .form__row-icon-mail,
   .form__row-icon-phone {
     top: 17px;
-    right: 20px;
+    right: 15px;
   }
 
   .form__row-icon-mail {
     top: 20px;
+  }
+
+  .form__row-icon-phone {
+    right: 12px;
   }
 
   .form__radio-input + .form__radio-label::before {
@@ -334,7 +358,7 @@
   }
 
   .form__radio {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   .form__row-input::placeholder,
@@ -351,10 +375,18 @@
     line-height: 30px;
   }
 
+  .form__text-fields--contacts .form__row-label {
+    margin-top: 10px;
+  }
+
+  .form__row-phone .form__row-label {
+    margin-right: 15px;
+  }
+
   .form__radio-label {
     font-size: 20px;
     line-height: 30px;
-    margin-left: 60px;
+    margin-left: 52px;
   }
 
   .form__row-input {
@@ -365,22 +397,25 @@
     line-height: 30px;
   }
 
-  .form__block--contacts {
-    margin-bottom: 80px;
+  .form__text-fields--contacts {
+    margin-top: 90px;
+    margin-bottom: 90px;
   }
 
   .form__row-input--contacts {
     border: 1px solid $grey-cd;
+    padding-left: 18px;
+    padding-top: 8px;
   }
 
   .form__block--program {
     border: 1px solid $grey-e7;
-    padding: 15px 0 5px 20px;
-    margin-bottom: 80px;
+    padding: 10px 0 15px 23px;
+    margin-bottom: 88px;
   }
 
   .form__block--comment {
-    margin-bottom: 80px;
+    margin-bottom: 88px;
   }
 
   .form__text-input--comment {
@@ -392,29 +427,42 @@
     padding-left: 20px;
   }
 
+  .form__text {
+    margin-top: 10px;
+  }
+
   .form__checkbox-fields {
-    display: flex;
-    justify-content: space-between;
-    margin-top: -20px;
+    margin-top: -22px;
     margin-bottom: 40px;
+  }
+
+  .form__checkbox-fields-1,
+  .form__checkbox-fields-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form__checkbox-fields-1 {
+    margin-right: 97px;
+  }
+
+  .form__checkbox-fields-2 {
+    margin-right: 135px;
   }
 
   .form__checkbox-label {
     font-size: 20px;
     line-height: 30px;
-    margin-left: 60px;
+    margin-left: 48px;
   }
 
   .form__checkbox {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 
     &:nth-child(2n) {
       margin-bottom: 0;
     }
-  }
-
-  .form__checkbox-fields-2 {
-    margin-right: 130px;
   }
 
   .form__submit {
@@ -426,20 +474,23 @@
 
   .form__submit-block {
     width: 100%;
-    margin-right: 40px;
+    margin-right: 60px;
+    margin-top: -10px;
   }
 
   .form__submit-button {
     width: 100%;
     text-align: center;
-    padding: 10px 0;
+    padding: 11px 0;
     font-size: 20px;
   }
 
   .form__submit-note {
-    width: 280px;
     margin-top: 10px;
-    white-space: no-wrap;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 16px;
+    margin-right: -20px;
   }
 }
 
@@ -456,11 +507,13 @@
   .form__layout {
     display: flex;
     flex-direction: row;
+    margin-bottom: -15px;
   }
 
   .form__row {
     display: flex;
     width: 569px;
+    margin-bottom: 20px;
   }
 
   .form__row-icon-mail,
@@ -522,7 +575,7 @@
   .form__radio-label {
     font-size: 20px;
     line-height: 30px;
-    margin-left: 60px;
+    margin-left: 55px;
   }
 
   .form__row-input {
@@ -552,6 +605,8 @@
   .form__text-fields--contacts {
     display: flex;
     justify-content: space-between;
+    margin-top: -10px;
+    margin-bottom: -20px;
   }
 
   .form__row-input--contacts {
@@ -559,7 +614,7 @@
   }
 
   .form__block--comment {
-    margin-bottom: 80px;
+    margin-bottom: 90px;
   }
 
   .form__text-input--comment {
@@ -575,7 +630,8 @@
 
   .form__checkbox-fields {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 55px;
+    margin-top: -25px;
   }
 
   .form__checkbox-fields-1,
@@ -585,28 +641,28 @@
   }
 
   .form__checkbox-fields-1 {
-    margin-right: 100px;
+    margin-right: 105px;
   }
 
   .form__checkbox-1 {
-    margin-right: 100px;
+    margin-right: 110px;
   }
 
   .form__checkbox-2 {
-    margin-right: 180px;
+    margin-right: 200px;
   }
 
   .form__checkbox-label {
     font-size: 20px;
     line-height: 30px;
-    margin-left: 60px;
+    margin-left: 45px;
   }
 
   .form__submit-button {
     width: 568px;
     text-align: center;
-    padding: 10px 0;
-    margin-right: 95px;
+    padding: 11px 0;
+    margin-right: 85px;
     font-size: 20px;
   }
 

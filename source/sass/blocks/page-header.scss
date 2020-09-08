@@ -21,11 +21,17 @@
 
 @media (max-width: $mobile-max) {
   .page-header__logo-block {
+    margin-top: 10px;
     margin-bottom: 10px;
   }
 
   .page-header__logo {
     margin-right: 50px;
+  }
+
+  .page-header__logo-sign {
+    margin-left: 5px;
+    margin-top: 10px;
   }
 }
 
@@ -43,5 +49,9 @@
 @media (min-width: $desktop) {
   .page-header__container {
     padding-top: 40px;
+  }
+
+  .page-header__logo-block {
+    margin-top: -3px;
   }
 }

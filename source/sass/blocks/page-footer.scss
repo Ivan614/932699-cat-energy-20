@@ -19,9 +19,11 @@
     justify-content: center;
     align-items: center;
     padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .page-footer__logo-block {
+    margin-top: 5px;
     margin-bottom: 30px;
   }
 }
@@ -31,15 +33,23 @@
     display: flex;
     justify-content: space-between;
     padding-top: 60px;
-    padding-bottom: 20px;
+    padding-bottom: 55px;
+  }
+
+  .page-footer__logo-block {
+    margin-top: 10px;
   }
 }
 
 @media (min-width: $desktop) {
   .page-footer__container {
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 70px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .page-footer__logo-block {
+    margin-top: 20px;
   }
 }

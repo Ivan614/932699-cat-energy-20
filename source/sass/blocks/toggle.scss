@@ -17,13 +17,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 30px;
   }
 
   .toggle__item-img {
     display: block;
     width: 320px;
-    margin: 0 auto;
+    max-width: 320px;
+  }
+
+  .toggle__item {
+    margin-top: 20px;
+    margin-left: -20px;
+    width: 100%;
   }
 
   .toggle__item--after {
@@ -81,15 +87,15 @@
 
   .toggle__item--before {
     position: absolute;
-    top: -170px;
-    left: 80px;
+    top: -165px;
+    left: 50px;
   }
 
   .toggle__item--after {
     position: absolute;
     width: 350px;
-    top: -170px;
-    left: 418px;
+    top: -165px;
+    left: 388px;
   }
 
   .toggle__item--after .toggle__item-img {
@@ -100,6 +106,8 @@
   .toggle__label {
     border-bottom: 1px dotted rgba($black, 0.4);
     padding-bottom: 3px;
+    font-size: 20px;
+    line-height: 30px;
 
     &:hover {
       border-bottom: 1px solid rgba($black, 0.4);
@@ -112,8 +120,8 @@
 
   .toggle__control {
     position: absolute;
-    bottom: 7%;
-    left: 10%;
+    bottom: 6%;
+    left: 13%;
     display: flex;
   }
 
@@ -195,14 +203,14 @@
 
   .toggle__item--before {
     position: absolute;
-    top: -590px;
+    top: -600px;
     left: 565px;
   }
 
   .toggle__item--after {
     position: absolute;
     width: 325px;
-    top: -590px;
+    top: -600px;
     left: 930px;
   }
 
@@ -214,6 +222,8 @@
   .toggle__label {
     border-bottom: 1px dotted rgba($black, 0.4);
     padding-bottom: 3px;
+    font-size: 20px;
+    line-height: 30px;
 
     &:hover {
       border-bottom: 1px solid rgba($black, 0.4);
@@ -226,8 +236,8 @@
 
   .toggle__control {
     position: absolute;
-    bottom: 15%;
-    left: 53.8%;
+    bottom: 13px;
+    left: 648px;
     display: flex;
   }
 

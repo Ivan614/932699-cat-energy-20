@@ -13,7 +13,7 @@
 }
 
 .site-list__item--active {
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   border-bottom: 2px solid $green;
 }
 
@@ -47,7 +47,7 @@
     justify-content: space-between;
     padding-bottom: 10px;
     width: 440px;
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   .site-list__item-link {
@@ -57,6 +57,11 @@
 }
 
 @media (min-width: $desktop) {
+  .site-list {
+    width: 478px;
+    margin-top: 30px;
+  }
+
   .site-list__item--index {
     color: $white;
   }
